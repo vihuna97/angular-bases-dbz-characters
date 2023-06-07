@@ -8,6 +8,6 @@
             <div class="form-group ">
                 <input  [(ngModel)]="character.power" id="powerInput" name= "power" class="col-md-12" type="number" placeholder='Nivel de poder'>
             </div>
-            <button  type="submit" style="position: absolute; top: 80%; left: 50%; width: 300px; transform: translate(-50%, -50%);" class="btn btn-primary">Agregar</button>   
+            <button  (click)="ngAfterViewInit()" type="submit" style="position: absolute; top: 80%; left: 50%; width: 300px; transform: translate(-50%, -50%);" class="btn btn-primary">Agregar</button>   
         </form>
     </div>
