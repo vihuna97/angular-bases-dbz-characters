@@ -1,1 +1,11 @@
-<h1>Hola DBZ</h1>
+<h1 style="text-align: center;">DBZ personajes</h1>
+<hr>
+<div class="row" >
+    <div class="col">
+        <dbz-list [characterList]="characters"
+                  (onDelete)="deleteCharacter($event)"      ></dbz-list>
+    </div>
+    <div class="col" style="min-height: 224.4px; max-height: 224.4px;">
+        <add-dbz-character (onNewCharacter)="onNewCharacter($event)"></add-dbz-character>
+    </div>
+</div>

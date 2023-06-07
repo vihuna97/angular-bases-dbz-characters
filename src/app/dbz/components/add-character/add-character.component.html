@@ -1,0 +1,13 @@
+<h4>Agregar Personaje</h4>
+        <div style="display: flex; flex-direction: column; border-radius: 10px; background-color: rgb(166, 214, 214); height:calc(100% - 36.8px); position: relative;">
+
+        <form style="padding: 10px;" (ngSubmit)="emitCharacter()">
+            <div class="form-group">
+                <input  [(ngModel)]="character.name" name= "name"class="col-md-12" type="text" placeholder="Personaje">
+            </div>
+            <div class="form-group ">
+                <input  [(ngModel)]="character.power" id="powerInput" name= "power" class="col-md-12" type="number" placeholder='Nivel de poder'>
+            </div>
+            <button  type="submit" style="position: absolute; top: 80%; left: 50%; width: 300px; transform: translate(-50%, -50%);" class="btn btn-primary">Agregar</button>   
+        </form>
+    </div>
